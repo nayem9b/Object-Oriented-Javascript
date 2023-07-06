@@ -1,11 +1,12 @@
 class Person {
   constructor(name, email) {
+    this.name = name;
+    this.email = email;
     console.log(name, email);
   }
 } //Here we are creating a class
 
 const p1 = new Person("typed", "based"); // Here we are creating a new instance. Like the template of the class
-p1.name = " Nayem";
-p1.email = "email";
+const p2 = new Person("Javascript", "Typescript");
 
-// Here Person() is a constructor function
+// Here we are passing the data through creating an instance and the Person is a class which holds the properties
