@@ -14,6 +14,12 @@ class Person {
   sendEmail(message) {
     console.log("sending message", message);
   }
+  arrow = () => {
+    console.log(this);
+  };
+  print() {
+    console.log(this);
+  }
 }
 
 const p1 = new Person("typed", "based");
