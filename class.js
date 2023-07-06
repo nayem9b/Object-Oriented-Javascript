@@ -3,6 +3,7 @@ class Person {
     this.name = name;
     this.email = email;
     console.log(name, email);
+    console.log(this);
   }
 } //Here we are creating a class
 
