@@ -1,21 +1,21 @@
+//! Object er vitore function ke method bole
 class Person {
   constructor(name, email) {
     this.name = name;
     this.email = email;
     console.log(name, email);
     console.log(this);
+  }
+  changeName(name) {
+    this.name = name;
+    console.log(name);
+  }
 
-    changeName(){
-// These are methods
-    }
-
-   sendEmail(){
-// These are methods
-   }
+  sendEmail(message) {
+    console.log("sending message", message);
   }
 }
 
 const p1 = new Person("typed", "based");
 const p2 = new Person("Javascript", "Typescript");
-
-//! Object er vitore function ke method bole
+p1.changeName("I'm changing name from methods"); //But this method is only accessable inside class
